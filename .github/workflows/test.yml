@@ -12,4 +12,4 @@ jobs:
       - name: Verify installation
         run: sbcl --non-interactive --eval "(print (ql:client-version))" --eval "(print (asdf:asdf-version))"
       - name: Test
-        run: sbcl --script main.lisp
+        run: sbcl --script test/test.lisp

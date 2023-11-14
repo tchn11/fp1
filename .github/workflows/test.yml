@@ -11,7 +11,5 @@ jobs:
           version: 2.2.8
       - name: Verify installation
         run: sbcl --non-interactive --eval "(print (ql:client-version))" --eval "(print (asdf:asdf-version))"
-      - name: Install librarbes
-        run: sbcl --load quicklisp.lisp --script ./install_packages.lisp
       - name: Test
         run: sbcl --script .\main.lisp

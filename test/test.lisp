@@ -9,6 +9,9 @@
 (lisp-unit:define-test slove15_reduce
     (lisp-unit:assert-equal 137846528820 (solve15map_reduce)))
 
+(lisp-unit:define-test sove15_infinte
+    (lisp-unit:assert-equal 137846528820 (solve15map_reduce)))
+
 (lisp-unit:define-test slove16
     (lisp-unit:assert-equal 1366 (solve16)))
 

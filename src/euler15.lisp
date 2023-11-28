@@ -22,3 +22,11 @@
 ;map, reduce и генератор
 (defun solve15map_reduce ()
     (reduce #'* (mapcar #'(lambda(x) (/ (+ 20 x) x )) (loop for i from 1 to 20 collect i))))
+
+;бесконечные последовательности
+(defun sove15_infinte ()
+    (let ((counter (let ((a 0) (m 1))
+                    (lambda () (setq m (* m (/ (+ 20 (incf a)) a)))))))
+    (dotimes (i 19)
+        (funcall counter))
+    (funcall counter)))

@@ -1,12 +1,13 @@
 ;рекурсией
 (defun solve15 (a b)
-    (if (and (> a 0) (> b 0))
-        (+ (solve15 (- a 1) b) (solve15 a (- b 1)))
-        (if (and (= a 0) (> b 0))
-            (solve15 a (- b 1))
-            (if (and (> a 0) (= b 0))
-                (solve15 (- a 1) b)
-                1))))
+    (cond
+    ((and (> a 0) (> b 0))
+        (+ (solve15 (- a 1) b) (solve15 a (- b 1))))
+    ((and (= a 0) (> b 0))
+        (solve15 a (- b 1)))
+    ((and (> a 0) (= b 0))
+        (solve15 (- a 1) b))
+    (t 1)))
 
 ; лоб через циклы
 (defun solve15array ()

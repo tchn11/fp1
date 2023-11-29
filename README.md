@@ -29,3 +29,8 @@ What is the sum of the digits of the number $2^{1000}$?
 
 Требуется использовать идиоматичный для технологии стиль программирования.
 
+### Ссылки на formatter и linter
+
+Форматтер: https://github.com/eschulte/lisp-format <br>
+Линтер: https://marketplace.visualstudio.com/items?itemName=qingpeng.common-lisp
+

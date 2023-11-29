@@ -9,7 +9,7 @@
     (solve15 (- a 1) b))
    (t 1)))
 
-					; лоб через циклы
+					;в лоб через циклы
 (defun solve15array ()
   (let ((df (make-array '(21 21))))
     (setf (aref df 0 0) 1)
@@ -26,7 +26,7 @@
 					;бесконечные последовательности
 (defun sove15_infinte ()
   (let ((counter (let ((a 0) (m 1))
-		   (lambda () (setq m (* m (/ (+ 20 (incf a)) a)))))))
+		   (lambda () (setf m (* m (/ (+ 20 (incf a)) a)))))))
     (dotimes (i 19)
       (funcall counter))
     (funcall counter)))

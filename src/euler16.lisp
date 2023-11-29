@@ -5,7 +5,7 @@
 
     (let ((sum 0))
       (loop for i in (coerce (write-to-string num) 'list)
-	do (setf sum (+ sum (digit-char-p i))))
+	  do (setf sum (+ sum (digit-char-p i))))
       sum)))
 
 (defun solve16rec (n prev)
@@ -13,7 +13,7 @@
       (solve16rec (+ n 1) (* prev 2))
     (let ((sum 0))
       (loop for i in (coerce (write-to-string prev) 'list)
-	do (setf sum (+ sum (digit-char-p i))))
+	  do (setf sum (+ sum (digit-char-p i))))
       sum)))
 
 (defun solve16rec_map_reduce (n prev)

@@ -8,7 +8,7 @@ jobs:
       - name: Prepare
         uses: awalsh128/cache-apt-pkgs-action@latest
         with:
-          packages: dh-exec diff
+          packages: emacs diff
           version: 1.0
       - name: Format files
         run: bash ./lisp-format src/euler15.lisp > euler15_form.lisp; bash ./lisp-format src/euler16.lisp > euler16_form.lisp

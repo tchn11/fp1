@@ -1,5 +1,14 @@
 on: [push, pull_request]
 jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Format files
+        run: ./lisp-format src/euler15.lisp > euler15_form.lisp; ./lisp-format src/euler16.lisp > euler16_form.lisp
+      - name: Compare with format
+        run: diff src/euler15.lisp euler15_form.lisp; diff src/euler16.lisp euler16_form.lisp
   test:
     runs-on: ubuntu-latest
     steps:

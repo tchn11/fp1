@@ -6,7 +6,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Prepare
-        run: sudo apt install exec
+        run: sudo apt update; sudo apt upgrade; sudo apt install exec
       - name: Format files
         run: bash ./lisp-format src/euler15.lisp > euler15_form.lisp; bash ./lisp-format src/euler16.lisp > euler16_form.lisp
       - name: Compare with format

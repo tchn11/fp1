@@ -22,3 +22,8 @@
     (lisp-unit:assert-equal 1366 (solve16rec_map_reduce 0 1)))
 
 (lisp-unit:run-tests)
+
+(asdf:load-system :lisp-critic)
+
+(critique-file "src/euler15.lisp")
+(critique-file "src/euler16.lisp")

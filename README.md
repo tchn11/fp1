@@ -34,3 +34,6 @@ What is the sum of the digits of the number $2^{1000}$?
 Форматтер: https://github.com/eschulte/lisp-format <br>
 Линтер: https://marketplace.visualstudio.com/items?itemName=qingpeng.common-lisp
 
+## Выводы:
+
+В ходе выполнения лабораторной работы я получила опыт работы с языком программирования lisp. Как мне кажется, программировать на подобном языке программирования непривычно и не очень удобно. Хотя рекурсивные реализации выглядят значительно короче.
